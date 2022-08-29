@@ -67,6 +67,11 @@ body {
   width: fit-content;
 }
 
+#nefte {
+  font-family: "BioRhyme", serif;
+  font-weight: bold;
+}
+
 .first-info-section {
   text-align: justify;
   word-spacing: 0.8em;
@@ -74,26 +79,121 @@ body {
   margin-left: 10px;
   padding: 10px 5px;
 }
+
+.first-info-image {
+  border-radius: 100%;
+  border-image-source: linear-gradient(to left, #00e0c3, #c548d1);
+  overflow: hidden;
+  margin-top: 30px;
+  background: linear-gradient(to right, #00e0c3, #c548d1);
+  margin-right: 20px;
+  transition: 0.4ms ease-out all;
+}
+
+.first-info-image:hover {
+  transform: scale(1.05);
+}
 .section-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
+  margin-top: 40px;
 }
-
 /* end of first-info-section styles  */
 
-.section-2{
-    display: flex;
-    margin-top:50px;
-    justify-content: space-between;
-    border:1px solid green;
+/* start of section-2 styles  */
+.section-2 {
+  margin-top: 50px;
+  background-color: #012a4a;
 }
 
-.card{
-    text-align: justify;
-    border: 1px solid red;
-    padding:10px 10px 10px 10px
+.section-2 h3 {
+  text-align: center;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+  min-height: 600px;
+}
 
+.card {
+  text-align: justify;
+  padding: 10px 10px 10px 10px;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #001233;
+}
+
+.card:hover {
+  background: linear-gradient(#00e0c3, #c548d1);
+  color: white;
+}
+
+.fa-solid {
+  text-align: center;
+  color: #00e0c3;
+  font-size: 2em;
+  display: block;
+  margin-top: 10px;
+}
+
+.fa-arrow-right {
+  display: inline;
+  font-size: 1.2em;
+  margin: 0;
+}
+.nft-view {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card p {
+  margin-top: 40px;
+  line-height: 1.8;
+}
+
+.section-2 h3 {
+  font-size: 2em;
+  word-spacing: 1em;
+  padding-top: 50px;
+}
+
+/* end of section-2 styles  */
+
+/* Start of learn container */
+.learn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* End of learn container */
+
+@media only screen and (max-width: 1000px) {
+  .section-1 {
+    flex-direction: column;
+    display: block;
+  }
+
+  .first-info-image > img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+  }
+}
