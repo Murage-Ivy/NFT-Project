@@ -54,7 +54,9 @@ body {
 /* first-info-section styles */
 .first-info-section h2 {
   font-family: "BioRhyme", serif;
-  font-weight: bold;
+  font-weight: lighter;
+  font-size: 2em;
+
 }
 
 #first-info-learn-more {
@@ -173,7 +175,37 @@ body {
   justify-content: space-between;
 }
 
+.learn-info{
+  margin:auto;
+}
+
 /* End of learn container */
+
+.collection{
+  margin-top:50px;
+  height: 600px;
+}
+
+.collection-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#00e0c3, #c548d1);
+  border:1px solid yellow;
+  height:500px;
+  
+}
+
+.collection-card{
+  background-color: #001233;
+  width:300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+
+}
 
 @media only screen and (max-width: 1000px) {
   .section-1 {
