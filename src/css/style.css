@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap");
+* {
+  color: white;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #001233;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+}
+.logo {
+  width: 20%;
+  border: 1px solid green;
+}
+.authentication {
+  width: 20%;
+  border: 1px solid red;
+}
+#nav-bar {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+#nav-bar-list {
+  padding: 10px 10px 10px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-bar-list li {
+  display: inline-block;
+}
+#nav-bar-list li a {
+  color: white;
+  text-decoration: none;
+}
+#nav-bar-list li a:hover {
+  color: aqua;
+}
+
+/* first-info-section styles */
+.first-info-section h2 {
+  font-family: "BioRhyme", serif;
+  font-weight: bold;
+}
+
+#first-info-learn-more {
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  background: linear-gradient(#00e0c3, #c548d1);
+  margin-top: 20px;
+  display: block;
+  width: fit-content;
+}
+
+.first-info-section {
+  text-align: justify;
+  word-spacing: 0.8em;
+  line-height: 1.8;
+  margin-left: 10px;
+  padding: 10px 5px;
+}
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+/* end of first-info-section styles  */
+
+.section-2{
+    display: flex;
+    margin-top:50px;
+    justify-content: space-between;
+    border:1px solid green;
+}
+
+.card{
+    text-align: justify;
+    border: 1px solid red;
+    padding:10px 10px 10px 10px
+}
+
+
