@@ -16,11 +16,8 @@ p {
 
 body {
   background-color: #001233;
-  border: 1px solid red;
 }
-.container {
-  border: 1px solid #e1ad01;
-}
+
 
 .header {
   display: flex;

@@ -41,12 +41,23 @@ function submitData() {
         const secondName = document.querySelector('#second-name').value;
         const emailsName = document.querySelector('#email').value;
         console.log(firstName);
+        console.log(secondName);
+        console.log(emailsName);
 
         e.target.reset();
+    })
+}
+
+function joinFunction() {
+    const button = document.querySelector('#join-btn');
+    button.addEventListener('click', () => {
+      alert('Fill the contact form to Join the Nefte Club');
+
     })
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchNftData()
     submitData()
+    joinFunction()
 })
