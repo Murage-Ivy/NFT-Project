@@ -1,0 +1,41 @@
+{
+  "collections": [
+    {
+      "id": 1,
+      "collection_name": "Bored Ape",
+      "Collection_url": "https://www.nft-stats.com/collection/boredapeyachtclub",
+      "collection_image": "https://lh3.googleusercontent.com/r3JFBLh4S9q5VEbJVqGa7q8AKT60zFEHIPlcCCSfY4ijtWD4PzcY92uti7N4S8fYsOwSBJnkhTMrebA6hlgcCveed05Dde8MfY8mWg"
+    },
+
+    {
+      "id": 2,
+      "collection_name": "Mutant Ape Yacht",
+      "Collection_url": "https://www.nft-stats.com/collection/mutant-ape-yacht-club",
+      "collection_image": "https://lh3.googleusercontent.com/cVQPqCkWCn-lyf5U4gPQgVLPB6UWeHWhtgVaWip2pwRFOb9qvksBQ2LtDs06NrZ7CJ-n68J5O-NZC6Sgyxg25VKrrbKbtFoToqKPeg"
+    },
+    {
+      "id": 3,
+      "collection_name": "Doodles",
+      "Collection_url": "https://www.nft-stats.com/collection/doodles-official",
+      "collection_image": "https://lh3.googleusercontent.com/rIkMld1ojLU3MWDWzyUQWq3haXerzVjKb-BrDeoqne9yilDLS59INvr3e4myRePHpF_n8PQXEp-q-4nkJwKEMrqOZaUW877GgVOT"
+    },
+    {
+      "id": 4,
+      "collection_name": "Cool Cats",
+      "Collection_url": "https://www.nft-stats.com/collection/cool-cats-nft",
+      "collection_image": "https://lh3.googleusercontent.com/lHYEdHUCuIwjedAtajYzOcGs8PE822TvwS2pFDXOg6CdoeWwqd0pcEkhb9znr49PG7xXtJW45S4SQhMGGE2hQIJDA_K0N-BgeDTZEtE"
+    },
+    {
+      "id": 5,
+      "collection_name": "World of Women",
+      "Collection_url": "https://www.nft-stats.com/collection/world-of-women-nft",
+      "collection_image": "https://lh3.googleusercontent.com/f8DtTLcGIzweB17CKu4s4mt-Iz3jbnIVWAbszWF3sNu8cYpV8kbPnw6T-YHH3QkytKnyZNf4R-D1xDr-CscN2gNVOtUN5KtXtuDzRg"
+    },
+    {
+      "id": 6,
+      "collection_name": "Boss Beauties",
+      "Collection_url": "https://www.nft-stats.com/collection/bossbeauties",
+      "collection_image": "https://lh3.googleusercontent.com/1h_1Pdj3LwGYYIR5fiqse8pz9bUjp68sAEm40AD-QIQcu9WzJ2RnqbapTa6jNV3X5Wa7o88Ei_J11vYSU5n5QY6sfp5DiciUyiH7Wg"
+    }
+  ]
+}
