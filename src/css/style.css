@@ -17,17 +17,58 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
   padding: 10px 10px 10px 10px;
   align-items: center;
 }
 .logo {
   width: 20%;
-  border: 1px solid green;
+}
+
+.logo-nefte {
+  color: #001233;
+  letter-spacing: 0.1em;
+  font-size: 2.5em;
+  -webkit-text-stroke: 0.1vw#00e0c3;
+}
+.logo-nefte::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 100%;
+  height: auto;
+  color: #00e0c3;
+  -webkit-text-stroke: 0vw#00e0c3;
+  border-right: 1px solid #00e0c3;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 10%;
+  }
 }
 .authentication {
   width: 20%;
-  border: 1px solid red;
+  padding: 10px 10px;
+  text-align: right;
+}
+
+#join-btn {
+  padding: 10px 30px 10px 30px;
+  border-style: none;
+  color: white;
+  background: transparent;
+  border: 2px solid #00e0c3;
+  border-radius: 10px;
 }
 #nav-bar {
   width: 60%;
@@ -37,11 +78,11 @@ body {
 #nav-bar-list {
   padding: 10px 10px 10px 10px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  text-align: right;
 }
 #nav-bar-list li {
   display: inline-block;
+  padding: 10px 10px 10px 10px;
 }
 #nav-bar-list li a {
   color: white;
@@ -54,9 +95,8 @@ body {
 /* first-info-section styles */
 .first-info-section h2 {
   font-family: "BioRhyme", serif;
-  font-weight: lighter;
+  font-weight: light;
   font-size: 2em;
-
 }
 
 #first-info-learn-more {
@@ -169,42 +209,39 @@ body {
 /* end of section-2 styles  */
 
 /* Start of learn container */
-.learn{
+.learn {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.learn-info{
-  margin:auto;
+.learn-info {
+  margin: auto;
 }
 
 /* End of learn container */
 
-.collection{
-  margin-top:50px;
+.collection {
+  margin-top: 50px;
   height: 600px;
 }
 
-.collection-cards{
+.collection-cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(#00e0c3, #c548d1);
-  border:1px solid yellow;
-  height:500px;
-  
+  border: 1px solid yellow;
+  height: 500px;
 }
 
-.collection-card{
+.collection-card {
   background-color: #001233;
-  width:300px;
+  width: 300px;
   height: 300px;
   border-radius: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  
-
 }
 
 @media only screen and (max-width: 1000px) {
