@@ -33,8 +33,8 @@ body {
 .logo-nefte::before {
   content: attr(data-text);
   position: absolute;
-  top: 11px;
-  left: 11px;
+  top: 10px;
+  left: 10px;
   width: 100%;
   height: auto;
   color: #00e0c3;
@@ -201,15 +201,25 @@ body {
 }
 
 .section-2 h3 {
-  font-size: 2em;
+  position: relative;
+  font-family: "BioRhyme", serif;
+  font-size: 2rem;
   word-spacing: 1em;
-  padding-top: 50px;
+  padding-top: 20px;
 }
-
+/* h3::before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #00e0c3;
+  left: 0;
+  bottom: 0;
+  width: 1%;
+} */
 /* end of section-2 styles  */
 
 /* Start of learn container */
 .learn {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -231,7 +241,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(#00e0c3, #c548d1);
-  border: 1px solid yellow;
   height: 500px;
 }
 
@@ -244,10 +253,41 @@ body {
   margin-right: 10px;
 }
 
+.collection-card img{
+  display: block;
+  width: 100%;
+}
+
+/* Start of styling of news cards */
+.news-cards {
+  display: flex;
+  justify-content: space-between;
+}
+.latest-news h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.new-card img {
+  display: block;
+  
+}
+
+.new-card a {
+  display: block;
+  text-decoration: underline;
+}
+/* End of styling of news cards */
+
 @media only screen and (max-width: 1000px) {
+  .header {
+  }
   .section-1 {
     flex-direction: column;
     display: block;
+  }
+  body {
+    margin: auto;
   }
 
   .first-info-image > img {
@@ -263,6 +303,23 @@ body {
   .card {
     margin-top: 20px;
     width: auto;
+    height: auto;
+  }
+
+  .learn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .collection-cards {
+    flex-direction: column;
+    height: 100%;
+  }
+  .collection-card {
+    margin-top: 20px;
+  }
+  .collection {
     height: auto;
   }
 }
