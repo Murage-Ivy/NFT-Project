@@ -8,7 +8,7 @@ function fetchNftData() {
                 const collectionCards = document.querySelector('.collection-cards')
                 const div = document.createElement('div');
                 div.className = 'collection-card'
-                const link = document.createTextNode('Collection Link')
+                const link = document.createTextNode('Collection Link');
                 const image = document.createElement('img');
                 const h4 = document.createElement('h4');
                 const aHref = document.createElement('a');
@@ -24,7 +24,7 @@ function fetchNftData() {
                 collectionCards.appendChild(div);
 
                 console.log(aHref)
-                
+
             });
         })
         .catch(err => console.log(err))
@@ -32,6 +32,21 @@ function fetchNftData() {
 
 }
 
+function submitData() {
+    const form = document.querySelector('.contact-form');
+    console.log(form)
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        const firstName = document.querySelector('#first-name').value
+        const secondName = document.querySelector('#second-name').value;
+        const emailsName = document.querySelector('#email').value;
+        console.log(firstName);
+
+        e.target.reset();
+    })
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     fetchNftData()
+    submitData()
 })
