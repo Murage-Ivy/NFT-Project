@@ -51,7 +51,7 @@ function submitData() {
 function joinFunction() {
     const button = document.querySelector('#join-btn');
     button.addEventListener('click', () => {
-      alert('Fill the contact form to Join the Nefte Club');
+        alert('Fill the contact form to Join the Nefte Club');
 
     })
 }
