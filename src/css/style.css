@@ -394,6 +394,8 @@ button[type="submit"] {
   border-bottom: 2px solid #012a4a;
   padding-bottom: 70px;
   padding-top: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .links ul li {
@@ -479,7 +481,7 @@ button[type="submit"] {
   }
 
   .news-cards {
-    flex-direction: column;
+   flex-direction: column;
   }
 
   .latest-news {
@@ -487,9 +489,21 @@ button[type="submit"] {
   }
   .new-card {
     margin-top: 20px;
+    height: auto;
+    width: auto;
   }
 
   .header {
     display: none;
+  }
+  .footer-info{
+    display: block;
+    margin-left:20px;
+  }
+  .links{
+    margin-bottom: 20px;
+  }
+  .info{
+    margin-bottom: 20px;
   }
 }
