@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap");
 * {
   color: white;
@@ -6,7 +6,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
 
@@ -37,7 +37,7 @@ body {
 .logo-nefte::before {
   content: attr(data-text);
   position: absolute;
-  top: 10px;
+  top: 16px;
   left: 10px;
   width: 100%;
   height: auto;
@@ -57,7 +57,7 @@ body {
 
   70%,
   90% {
-    width: 11%;
+    width: 18%;
   }
 }
 .authentication {
@@ -300,6 +300,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
+  margin-left: 20px;
 }
 
 .latest-news {
@@ -327,16 +328,27 @@ body {
   bottom: 0;
   width: 10%;
 }
-
+.new-card {
+  width: 30%;
+  height: 400px;
+  border: 1px solid #1e3258;
+  border-radius: 5px;
+}
 .new-card img {
   display: block;
-  width: 100%;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 30px;
 }
-
+.new-card p {
+  margin-left: 20px;
+}
 .new-card a {
   display: block;
   text-decoration: underline;
   font-weight: 900;
+  margin-left: 20px;
 }
 /* End of styling of news cards */
 
@@ -344,6 +356,12 @@ body {
 .contact-form h3 {
   margin-bottom: 30px;
   margin-top: 30px;
+}
+
+.contact-form{
+  display: grid;
+  
+  
 }
 
 input[type="text"] {
@@ -367,6 +385,39 @@ button[type="submit"] {
 
 /* End of footer styles */
 
+.footer-info {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  border-top: 2px solid #012a4a;
+  padding-top: 30px;
+  border-bottom: 2px solid #012a4a;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.links ul li {
+  padding: 10px;
+}
+.info ul li {
+  padding: 10px;
+}
+
+.social-links {
+  margin-top: 30px;
+}
+.fa-brands {
+  font-size: 1.5em;
+  margin-right: 30px;
+}
+
+.copy-right {
+  height: 100px;
+  text-align: center;
+  padding-top: 30px;
+}
+.copy-right p {
+}
 @media only screen and (max-width: 1000px) {
   .header {
   }
