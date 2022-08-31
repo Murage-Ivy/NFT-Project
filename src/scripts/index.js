@@ -47,7 +47,13 @@ function submitData() {
         e.target.reset();
     })
 
-    const emailForm = 
+    const emailForm = document.querySelector('.update-emails');
+    emailForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputValue = document.querySelector('.update-input').value;
+        e.target.reset();
+
+    })
 }
 
 function joinFunction() {
