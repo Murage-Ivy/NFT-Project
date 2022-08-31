@@ -46,10 +46,13 @@ function submitData() {
 
         e.target.reset();
     })
+
+    const emailForm = 
 }
 
 function joinFunction() {
     const button = document.querySelector('#join-btn');
+
     button.addEventListener('click', () => {
         alert('Fill the contact form to Join the Nefte Club');
 
