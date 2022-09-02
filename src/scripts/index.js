@@ -4,7 +4,6 @@ function fetchNftData() {
     return fetch(`${apiHost}/collections`)
         .then(res => res.json())
         .then(collections => {
-            console.log(collections);
             collections.forEach(collection => {
                 // grab the collections-cards div to store cards
                 const collectionCards = document.querySelector('.collection-cards')
@@ -51,6 +50,7 @@ function fetchNftData() {
 
 
 }
+
 // increses the number of likes when a person clicks the like button 
 function addLikes(span, button, collectionId) {
     //adding likes 
@@ -75,12 +75,12 @@ function addLikes(span, button, collectionId) {
 // when a user clicks the submit button the input fields are cleared
 function submitData() {
     const form = document.querySelector('.contact-form');
-    console.log(form)
     form.addEventListener('submit', (e) => {
         e.preventDefault()
         const firstName = document.querySelector('#first-name').value
         const secondName = document.querySelector('#second-name').value;
         const emailsName = document.querySelector('#email').value;
+
         console.log(firstName);
         console.log(secondName);
         console.log(emailsName);
@@ -111,5 +111,4 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchNftData()
     submitData()
     joinFunction()
-
 })
