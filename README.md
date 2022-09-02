@@ -14,7 +14,8 @@ How they can store data about their arts. NFTS are digital assets that are repre
 2/09/2022
 ## Demo
 Here is a live demo of the landing page:  
-(https://murage-ivy.github.io/Dairy_Business/)
+[Untitled_ Sep 2, 2022 10_29 PM.webm](https://user-images.githubusercontent.com/108492757/188224733-f2a4ab77-d103-4b11-9eed-047933a73eaf.webm)
+
 #### By 
 Ivy Wambui Murage
 ## Objective of the project
