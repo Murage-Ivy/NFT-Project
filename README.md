@@ -3,17 +3,16 @@
 # Table of Contents
 
 1. [NEFTE CLUB](#my-first-title)
-2. [My second title](#my-second-title)
 # NEFTE CLUB 
 #### Brief description of application
 How can artist retains ownership of the copyrights of their works after they have sold their arts. Well Nefte Club is a solution that intends to educate artists
 about NFTS. The Nefte Club webiste is an informational website that explains why potential artist should join the club. We also show case different representations of nft. 
 How they can store data about their arts. NFTS are digital assets that are represents as music, pictures or even music. 
-## My second title
+
 #### Date of current version 
 2/09/2022
 ## Demo
-Here is a live demo of the landing page:  
+Here is a live demo of the Application page  
 [Untitled_ Sep 2, 2022 10_29 PM.webm](https://user-images.githubusercontent.com/108492757/188224733-f2a4ab77-d103-4b11-9eed-047933a73eaf.webm)
 
 #### By 
