@@ -2,7 +2,10 @@
 
 # Table of Contents
 
-1. [NEFTE CLUB](#my-first-title)
+1. [NEFTE CLUB](#nefte-club)
+2. [Demo](#demo)
+3. [Objective of the project](#Objectives)
+4. [Usage](#usage)
 # NEFTE CLUB 
 #### Brief description of application
 How can artist retains ownership of the copyrights of their works after they have sold their arts. Well Nefte Club is a solution that intends to educate artists
