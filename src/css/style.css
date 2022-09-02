@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap");
+
+/* Start of general styles */
 * {
   color: white;
   box-sizing: border-box;
@@ -18,6 +20,9 @@ body {
   background-color: #001233;
 }
 
+/* End of general styles */
+
+/* Start of header styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -74,6 +79,8 @@ body {
   border: 2px solid #00e0c3;
   border-radius: 10px;
 }
+
+/* Start of nav bar styles */
 #nav-bar {
   width: 60%;
   display: flex;
@@ -95,6 +102,8 @@ body {
 #nav-bar-list li a:hover {
   color: aqua;
 }
+/* End of nav bar styles */
+/* End of header styles */
 
 /* first-info-section styles */
 .first-info-section h2 {
@@ -242,14 +251,6 @@ body {
   height: auto;
 }
 
-.collection-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background: linear-gradient(#00e0c3, #c548d1);
-  height: auto;
-}
 .collection {
   background: linear-gradient(#00e0c3, #c548d1);
 }
@@ -263,6 +264,18 @@ body {
   padding-top: 20px;
 }
 
+/* Holds all the cards */
+.collection-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: linear-gradient(#00e0c3, #c548d1);
+  height: auto;
+}
+
+/*Holds the nft art ana its details */
+
 .collection-card {
   background-color: #001233;
   width: 300px;
@@ -271,6 +284,25 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   margin: 30px 10px 30px 10px;
+}
+
+.like-button {
+  font-size: 1rem;
+  border: none;
+  background: none;
+  transition: color 300ms;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fa-heart {
+  color: rgb(241, 71, 19);
+}
+
+.likes {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .collection-card img {
@@ -294,6 +326,7 @@ body {
   text-align: center;
   text-decoration: underline;
 }
+
 /* Start of styling of news cards */
 .news-cards {
   display: flex;
@@ -350,6 +383,7 @@ body {
   font-weight: 900;
   margin-left: 20px;
 }
+
 /* End of styling of news cards */
 
 /* Start of  footer styles */
@@ -358,10 +392,9 @@ body {
   margin-top: 30px;
 }
 
-.contact-form{
+.contact-form {
   display: grid;
   margin-left: 30px;
-  
 }
 
 input[type="text"] {
@@ -412,16 +445,52 @@ button[type="submit"] {
   font-size: 1.5em;
   margin-right: 30px;
 }
-
+.update-input {
+  margin-right: 20px;
+}
 .copy-right {
   height: 100px;
   text-align: center;
   padding-top: 30px;
 }
-.copy-right p {
-}
+
+/* Start of media query */
+
 @media only screen and (max-width: 1000px) {
   .header {
+    width: 100%;
+    display: block;
+  }
+
+  #nav-bar {
+    width: 100%;
+    display: block;
+  }
+
+  #nav-bar-list {
+    padding: 0;
+  }
+
+  #nav-bar-list li {
+    display: block;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+  }
+  .logo-nefte::before {
+    top: 11px;
+    left: 11px;
+  }
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+
+    70%,
+    90% {
+      width: 40%;
+    }
   }
   .section-1 {
     flex-direction: column;
@@ -481,7 +550,7 @@ button[type="submit"] {
   }
 
   .news-cards {
-   flex-direction: column;
+    flex-direction: column;
   }
 
   .latest-news {
@@ -493,17 +562,16 @@ button[type="submit"] {
     width: auto;
   }
 
-  .header {
-    display: none;
-  }
-  .footer-info{
+  .footer-info {
     display: block;
-    margin-left:20px;
+    margin-left: 20px;
   }
-  .links{
+  .links {
     margin-bottom: 20px;
   }
-  .info{
+  .info {
     margin-bottom: 20px;
   }
 }
+
+/* End of media query */
