@@ -1,6 +1,6 @@
-function fetchNftData() {
-    const apiHost = '  http://localhost:3000';
+const apiHost = '  http://localhost:3000';
 
+function fetchNftData() {
     return fetch(`${apiHost}/collections`)
         .then(res => res.json())
         .then(collections => {
@@ -28,7 +28,8 @@ function fetchNftData() {
                 h4.textContent = `${collection.collection_name}`;
                 aHref.href = `${collection.Collection_url}`;
                 button.innerHTML = `<i class="fa-solid fa-heart"></i>`;
-                span.textContent = '0 likes'
+                span.textContent = `${collection.likes} likes`
+
                 aHref.appendChild(link)
 
                 // append the div cards on the collection-cards div
@@ -39,16 +40,36 @@ function fetchNftData() {
                 div.appendChild(span)
                 collectionCards.appendChild(div);
 
-
+                //calling the addLikes function 
+                addLikes(span, button, collection.id)
             });
         })
         .catch(err => {
             console.log(err)
-            collectionCards.textContent = `${err.message}`
-
+            document.querySelector('.collection-cards').textContent = `${err.message}`
         })
 
 
+}
+// increses the number of likes when a person clicks the like button 
+function addLikes(span, button, collectionId) {
+    //adding likes 
+    //adding an event listener to the like button
+    button.addEventListener('click', () => {
+        let likesCount = parseInt(span.textContent.split(' ')[0]) + 1;
+        fetch(`${apiHost}/collections/${collectionId}`, {
+                method: 'PATCH',
+                headers: {
+                    'content-type': 'application/json',
+                    'accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    likes: likesCount
+                })
+            })
+            .then(res => res.json())
+            .then(span.textContent = `${likesCount} likes`)
+    })
 }
 
 // when a user clicks the submit button the input fields are cleared
@@ -90,4 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchNftData()
     submitData()
     joinFunction()
+
 })
